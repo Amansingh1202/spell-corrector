@@ -12,6 +12,7 @@
 </body>
 <script>
     let v1 = document.getElementById("text-word");
+    let v2 = document.getElementById("correct-word")
     console.log(v1);
     v1.addEventListener('change', (event) => {
         var entry = {
@@ -32,7 +33,7 @@
       return;
     }
     response.json().then(function(data) {
-      console.log(data);
+      v2.innerText = data["message"];
     });
   })
   .catch(function(error) {
