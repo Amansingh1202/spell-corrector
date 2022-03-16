@@ -6,6 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check Spelling</title>
 </head>
+<style>
+  body {
+  font-family: Inter,sans-serif;
+  font-size: 1.2em;
+}
+
+textarea {
+  resize: none;
+  width:60vw;
+  height: 30vh;
+  margin-left: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2em;
+  margin-top: 30px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.05),0 2px 12px rgba(0,0,0,.15)
+}
+
+#correct-word {
+  width:60vw;
+  height: 30vh;
+  margin-left: 200px;
+  color:#17d9aa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.05),0 2px 12px rgba(0,0,0,.15);
+  top: -160px;
+}
+</style>
 <body>
     <textarea id="text-word" placeholder="Type text here..."></textarea>
     <p id="correct-word"></p>
